@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 30px;
+    background-color: #a37112;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+@media (min-width: 1001px) {
+    main {
+        min-height: 100vh;
+        background: linear-gradient(to right top, #312d25, #6cdbeb);
+        display: flex;
+        justify-content: center;
+    }
+
+    .glass {
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+        background: white;
+        min-height: 80vh;
+        width: 80%;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1)
+        );
+        border-radius: 2rem;
+        z-index: 2;
+        backdrop-filter: blur(1rem);
+    }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+        background-color: red;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1)
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #eb12e0;
+        font-size: large;
+        font-weight: 700;
+        animation: bubbleAnimation 1s 0s ease;
+    }
+
+    .break-line {
+        border-bottom: 1px solid rgb(78, 75, 241);
+        margin-bottom: 10px;
+    }
+
+    .circle1 {
+        height: 10rem;
+        width: 10rem;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+    }
+
+    .circle1:hover {
+        font-size: x-large;
+    }
+
+    .circle2 {
+        height: 6rem;
+        width: 6rem;
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+    }
+
+    .circle3 {
+        height: 13rem;
+        width: 13rem;
+        position: absolute;
+        top: 15%;
+        right: 5%;
+    }
+
+    .circle4 {
+        height: 20rem;
+        width: 20rem;
+        position: absolute;
+        bottom: 5%;
+        right: 25%;
+    }
+
+    @keyframes bubbleAnimation {
+        0% {
+            transform: scale(0.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .prof {
+        margin: 1rem 3rem;
+        width: 20%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .prof .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* margin-left: 25%;
+        margin-bottom: 5%; */
+    }
+
+    .prof p {
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(
+            to right bottom,
+            rgba(228, 220, 105, 0.8),
+            rgba(221, 103, 103, 0.5)
+        );
+        justify-content: space-between;
+        align-content: center;
+        width: 20%;
+        margin: 1rem 3rem;
+        border-radius: 2rem;
+        box-shadow: 4px 4px 4px rgba(108, 181, 184, 0.4);
+        padding: 2%;
+    }
+
+    nav a {
+        margin: 7% auto;
+        color: rgb(230, 255, 255);
+        font-size: larger;
+        font-weight: 800;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .home,
+    .about,
+    .experiences,
+    .projects {
+        background-color: inherit;
+        width: 60%;
+        height: 70vh;
+        position: absolute;
+        top: 7%;
+        left: 30%;
+        z-index: 5;
+        border-left: 5px dotted rgb(41, 165, 182);
+        padding-left: 4rem;
+        font-size: 20px;
+    }
+
+    .home {
+        padding-top: 2rem;
+    }
+
+    .home p {
+        font-size: 40px;
+    }
+
+    .home .quote {
+        font-style: oblique;
+    }
+
+    .projects {
+        overflow-y: auto;
+    }
+
+    .projects .project-item {
+        margin: 15px auto;
+    }
+
+    .projects .tech-used {
+        display: flex;
+    }
+
+    .projects .smallBox {
+        font-size: 20px;
+        color: #a37112;
+        width: fit-content;
+        border: 1px solid rgb(233, 12, 12);
+        padding: 3px 8px;
+        margin: 7px 5px;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .projects .description {
+        margin-bottom: 8px;
+    }
+
+    .footer {
+        height: 10vh;
+        position: absolute;
+        bottom: 00px;
+        left: 35%;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1)
+        );
+        width: 35%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .footer img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .college-details {
+        margin-bottom: 10px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skill-class {
+        display: flex;
+    }
+
+    .skills h4 {
+        width: 200px;
+        align-self: center;
+    }
+
+    .skills .skill-class .skills-sing {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skills .smallBox {
+        font-size: 20px;
+        color: #18abcf;
+        width: fit-content;
+        border: 1px solid rgba(32, 114, 7, 0.425);
+        padding: 3px 8px;
+        margin: 7px 5px;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .experiences {
+        padding: 40px 50px;
+    }
+
+    .experiences section {
+        margin: 10px auto;
+        color: red;
+        font-weight: 700;
+    }
+
+    .about {
+        padding-top: 20px;
+    }
+
+    .Inpage {
+        color: rgb(3, 3, 3);
+        transform: scale(1.15);
+    }
+}
+
+.experiences h2,
+.experiences h4 {
+    margin: 3px auto;
+}
+
+.study,
+.experiences,
+.projects,
+.about {
+    display: none;
+}
+
+.footer a:hover {
+    animation: floatAnimation 1s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1000px) {
+    a {
+        text-decoration: none;
+    }
+
+    main {
+        background: linear-gradient(to right top, #312d25, #6cdbeb);
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        padding: auto 5%;
+        height: 8vh;
+        margin-left: 5%;
+        background-color: transparent;
+        align-items: center;
+        border: 1px dotted slategray;
+    }
+
+    nav a {
+        margin: auto;
+        color: #e98a3d;
+        font-size: 20px;
+    }
+
+    .prof {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .prof p {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .profile-pic {
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+
+    .glass .prof img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .glass {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: 2.5%;
+        height: auto;
+        width: 95%;
+        height: 88vh;
+        border-radius: 5%;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1)
+        );
+    }
+
+    .home,
+    .about,
+    .experiences,
+    .projects {
+        position: relative;
+        padding: 7%;
+    }
+
+    .projects {
+        overflow-y: scroll;
+    }
+
+    .footer {
+        height: 8vh;
+        position: absolute;
+        bottom: 00px;
+        left: 15%;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1)
+        );
+        width: 70%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .college-details {
+        margin-bottom: 10px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .skills .skill-class {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills h4 {
+        width: 100px;
+        align-self: center;
+    }
+
+    .skills .smallBox {
+        font-size: 20px;
+        color: #18abcf;
+        width: fit-content;
+        border: 1px solid rgba(32, 114, 7, 0.425);
+        padding: 3px 8px;
+        margin: 7px 5px;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Inpage {
+        color: rgb(124, 10, 10);
+        transform: scale(1.15);
+    }
+}

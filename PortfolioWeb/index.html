@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./index.js"></script>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <main>
+            <section class="glass">
+                <div class="prof">
+                    <img
+                        class="profile-pic"
+                        src="./logos/Prof_pic.jpg"
+                        alt=""
+                    />
+                    <p>B Mutyam Reddy</p>
+                    <a
+                        style="
+                            display: flex;
+                            justify-content: center;
+                            color: red;
+                            margin: 5px auto;
+                        "
+                        href="./pdf/resume.pdf"
+                        target="_blank"
+                    >
+                        <img
+                            style="width: 20px; height: 20px"
+                            src="./logos/Download.png"
+                        />
+                        <p class="small-box">Resume</p>
+                    </a>
+                </div>
+                <nav>
+                    <a
+                        href="#"
+                        class="nav-home Inpage"
+                        onclick="hideShowFunc(1)"
+                        >Home</a
+                    >
+                    <a href="#" class="nav-proj" onclick="hideShowFunc(3)"
+                        >Projects</a
+                    >
+                    <a href="#" class="nav-expe" onclick="hideShowFunc(4)"
+                        >Work</a
+                    >
+                    <a href="#" class="nav-abot" onclick="hideShowFunc(2)"
+                        >About</a
+                    >
+                </nav>
+                <div>
+                    <div class="home">
+                        <section>
+                            Hello, this is<br />
+                            <p class="auto-type"></p>
+                            <div>
+                                I'm a self-motivated and adaptive Information
+                                Technology graduate, Currently working at
+                                Cognizant. I am a self-taught programmer who
+                                loves working with Websites and Applications.
+                                I'm looking for career opportunities in the
+                                field of Web Development, Software Development,
+                                Machine Learning, and Artificial Intelligence. I
+                                have great competence in the core fundamentals
+                                of Data Structure & Algorithms and
+                                Object-Oriented Programming.
+                            </div>
+                            <br />
+                            <div class="quote">
+                                "We love technology, so our work is nothing but
+                                our love for technology, we can write as many
+                                amazing lines of code as possible to run helpul
+                                software."
+                            </div>
+                            <br />
+                            To know more about me
+                            <button class="btn" onclick="hideShowFunc(2)">
+                                ABOUT
+                            </button>
+                        </section>
+                    </div>
+                    <div class="projects">
+                        <div class="project-item">
+                            <h2>Agritech E-Commerce Website</h2>
+                            <div class="tech-used">
+                                <section class="smallBox">React.js</section>
+                                <section class="smallBox">Bootstrap</section>
+                                <section class="smallBox">Firebase</section>
+                                <section class="smallBox">Commerce.js</section>
+                            </div>
+                            <div class="description">
+                                <b>Description:</b> Agritech is a full
+                                functioning e-commerce website for buying
+                                agriculture products on internet like
+                                pecticides, fertilzers and seeds. The backend of
+                                this website is build with commerce.js api and
+                                frontend of the website is devloped by me, this
+                                site also features like user registration
+                                authentication with the help of firebse.
+                            </div>
+                            <a target="_blank" href="https://agritech.ga"
+                                >Click here to visit the project</a
+                            >
+                        </div>
+                        <div class="break-line"></div>
+                        <div>
+                            <h2>Virtual Voice Assistant</h2>
+                            <div class="tech-used">
+                                <section class="smallBox">Python</section>
+                            </div>
+                            <div class="description">
+                                <b>Description:</b> Agritech is a fully
+                                functioning e-commerce website for buying
+                                agriculture products on internet like
+                                pecticides, fertilzers and seeds. The backend of
+                                this website is build with commerce.js api and
+                                frontend of the website is devloped by me, this
+                                site also features like user registration
+                                authentication with the help of firebse.
+                            </div>
+                            <a target="_blank" href="https://agritech.ga"
+                                >Click here to visit the project</a
+                            >
+                        </div>
+                    </div>
+                    <div class="experiences">
+                        <section>Currently working at</section>
+                        <h2 style="color: rgb(69, 69, 173); font-weight: 800">
+                            COGNIZANT
+                        </h2>
+                        <h4>
+                            12-October-2021
+                            <span style="color: rgb(30, 51, 238)">to</span>
+                            Present
+                        </h4>
+                        <h4>Programmer Analyst Trainee</h4>
+                        <h4>Bangolore</h4>
+                    </div>
+                    <div class="about">
+                        <section>
+                            <h3
+                                style="
+                                    color: rgb(209, 23, 23);
+                                    margin-top: 10px;
+                                    margin-left: 3px;
+                                "
+                            >
+                                Education:
+                            </h3>
+                            <div class="college-details">
+                                <h3 style="padding-left: 5px">
+                                    Bharath Institute of Higher Education and
+                                    Research,Chennai.<br />Bachelor of
+                                    Technology - Information Technology<br />
+                                    CGPA - 8.57.
+                                </h3>
+                            </div>
+                            <h3
+                                style="
+                                    color: rgb(209, 23, 23);
+                                    margin-top: 10px;
+                                    margin-left: 3px;
+                                "
+                            >
+                                Skills
+                            </h3>
+                            <div class="skills">
+                                <div class="skill-class">
+                                    <h4>Programming</h4>
+                                    <div class="skills-sing">
+                                        <section class="smallBox">C</section>
+                                        <section class="smallBox">C++</section>
+                                        <section class="smallBox">
+                                            Python
+                                        </section>
+                                        <section class="smallBox">Java</section>
+                                    </div>
+                                </div>
+                                <div class="skill-class">
+                                    <h4>DBMS</h4>
+                                    <section class="smallBox">SQL</section>
+                                </div>
+                                <div class="skill-class">
+                                    <h4>Web Development</h4>
+                                    <div class="skills-sing"></div>
+                                        <section class="smallBox">HTML</section>
+                                        <section class="smallBox">CSS</section>
+                                        <section class="smallBox">
+                                            Javascript
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="footer">
+            <a
+                styye
+                target="_blank"
+                href="https://www.linkedin.com/in/mutyam-reddy-bejjanki/"
+                ><img
+                    style="
+                        @media (max-width: 500px) {
+                            width: 50px;
+                            height: 30px;
+                        }
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    "
+                    src="./logos/linkedin-black.png"
+                    alt=""
+            /></a>
+            <a target="_blank" href="https://github.com/MutyamReddy"
+                ><img src="./logos/github-logo.png" alt=""
+            /></a>
+            <a target="_blank" href="https://leetcode.com/Mutyamreddy/"
+                ><img style="border-radius: 50%" src="./logos/le.png" alt=""
+            /></a>
+            <a
+                target="_blank"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=bejjankireddym777@gmail.com"
+                ><img src="./logos/mail.png" alt=""
+            /></a>
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Bejjanki Mutyam Reddy", "Programmer"],
+                typSpeed: 200,
+                backSpeed: 130,
+                loop: true,
+            });
+        </script>
+    </body>
+</html>
