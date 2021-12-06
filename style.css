@@ -210,17 +210,6 @@ a {
         display: flex;
     }
 
-    .projects .smallBox {
-        font-size: 20px;
-        color: #a37112;
-        width: fit-content;
-        border: 1px solid rgb(233, 12, 12);
-        padding: 3px 8px;
-        margin: 7px 5px;
-        background-color: transparent;
-        border-radius: 5px;
-    }
-
     .projects .description {
         margin-bottom: 8px;
     }
@@ -303,6 +292,17 @@ a {
     }
 }
 
+.projects .smallBox {
+    font-size: 20px;
+    color: #a37112;
+    width: fit-content;
+    border: 1px solid rgb(233, 12, 12);
+    padding: 3px 8px;
+    margin: 7px 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
 .experiences h2,
 .experiences h4 {
     margin: 3px auto;
@@ -351,6 +351,7 @@ a {
         background-color: transparent;
         align-items: center;
         border: 1px dotted slategray;
+        border-radius: 20px;
     }
 
     nav a {
@@ -384,32 +385,26 @@ a {
         position: relative;
     }
 
-    .glass {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        margin-left: 2.5%;
-        height: auto;
-        width: 95%;
-        height: 88vh;
-        border-radius: 5%;
-        background: linear-gradient(
-            to right bottom,
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.1)
-        );
-    }
-
     .home,
     .about,
     .experiences,
     .projects {
         position: relative;
         padding: 7%;
+        height: 75vh;
+        overflow-y: auto;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1)
+        );
+        margin: 5px;
     }
 
-    .projects {
-        overflow-y: scroll;
+    .projects .tech-used {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
     .footer {
@@ -468,7 +463,12 @@ a {
     }
 
     .Inpage {
-        color: rgb(124, 10, 10);
+        color: rgb(236, 134, 206);
         transform: scale(1.15);
+    }
+
+    .line-break {
+        border-bottom: 3px solid rgb(67, 45, 148);
+        margin: 5px auto;
     }
 }
