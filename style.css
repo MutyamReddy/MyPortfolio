@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: (red, green);
 }
 
 .btn {
@@ -23,6 +24,17 @@ a {
 .btn-outline {
     background-color: transparent;
     border: 1px solid #fff;
+}
+
+.experiences .smallBox {
+    font-size: 20px;
+    color: #18abcf;
+    width: fit-content;
+    border: 1px solid rgba(32, 114, 7, 0.425);
+    padding: 3px 8px;
+    margin: 7px 5px;
+    background-color: transparent;
+    border-radius: 5px;
 }
 
 @media (min-width: 1001px) {
@@ -409,7 +421,7 @@ a {
 
     .footer {
         height: 8vh;
-        position: absolute;
+        position: fixed;
         bottom: 00px;
         left: 15%;
         background: linear-gradient(
