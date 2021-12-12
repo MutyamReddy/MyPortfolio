@@ -294,6 +294,11 @@ a {
         font-weight: 700;
     }
 
+    .experiences .tech-using {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .about {
         padding-top: 20px;
     }
